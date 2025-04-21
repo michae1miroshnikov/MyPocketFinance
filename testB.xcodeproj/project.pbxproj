@@ -29,20 +29,23 @@
 		49D496A52D8DC217007DCFB7 /* testBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		495675C72D948294001FCCA0 /* Exceptions for "testB" folder in "testBTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				M/Transaction.swift,
+			);
+			target = 49D4969A2D8DC217007DCFB7 /* testBTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		49D496882D8DC216007DCFB7 /* testB */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				495675C72D948294001FCCA0 /* Exceptions for "testB" folder in "testBTests" target */,
+			);
 			path = testB;
-			sourceTree = "<group>";
-		};
-		49D4969E2D8DC217007DCFB7 /* testBTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = testBTests;
-			sourceTree = "<group>";
-		};
-		49D496A82D8DC217007DCFB7 /* testBUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = testBUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				49D496882D8DC216007DCFB7 /* testB */,
-				49D4969E2D8DC217007DCFB7 /* testBTests */,
-				49D496A82D8DC217007DCFB7 /* testBUITests */,
 				49D496872D8DC216007DCFB7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +131,6 @@
 			dependencies = (
 				49D4969D2D8DC217007DCFB7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				49D4969E2D8DC217007DCFB7 /* testBTests */,
-			);
 			name = testBTests;
 			packageProductDependencies = (
 			);
@@ -153,9 +151,6 @@
 			dependencies = (
 				49D496A72D8DC217007DCFB7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				49D496A82D8DC217007DCFB7 /* testBUITests */,
-			);
 			name = testBUITests;
 			packageProductDependencies = (
 			);
@@ -175,9 +170,11 @@
 				TargetAttributes = {
 					49D496852D8DC216007DCFB7 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 					49D4969A2D8DC217007DCFB7 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = 49D496852D8DC216007DCFB7;
 					};
 					49D496A42D8DC217007DCFB7 = {
@@ -393,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testB/Preview Content\"";
@@ -412,6 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.myPocketF.testB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -422,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"testB/Preview Content\"";
@@ -450,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QMD8BLY8VV;
@@ -459,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.myPocketF.testBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/testB";
@@ -469,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QMD8BLY8VV;
